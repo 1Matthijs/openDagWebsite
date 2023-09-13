@@ -1,12 +1,161 @@
 *{
-    margin: 0px ;
-    padding: 0px ;
+    margin: 0px;
+    padding: 0px;
+}
+/* hamburger menu*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  min-height: 200vh;
+  font-family: 'Cabin', Sans-serif;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #2add5d;
+  margin: 0px;  
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu a {
+  color: #B9FAF8;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      #2add5d, #2add5d 20%, 
+      #fc3232 20%, #fc3232 40%, 
+      #2add5d 40%, #2add5d 60%, 
+      #fc3232 60%, #fc3232 80%, 
+      #2add5d 80%, #2add5d 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #2add5d;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 11px black ;
+}
+
+#hamburger-menu h3 {
+  color: black;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+    
+}
+
+
+
+
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+#hamburger-menu {
+    display: inline;
+  }
+
+/* css header */
+.logo
+{
+    height: 10vh;
 }
 
 header{
-    height: 10vh;
-    background: #fc3232;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fc3232;
+    box-shadow: -1px 4px 11px black ;
 }
 
 .flexContainer{
@@ -14,12 +163,26 @@ header{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo{
-    height: 10vh;
+/* intro */
+
+.intro{
+    margin-top: 20vh;
+    background-color: #2add5d;
+    display: flex;
+    border: #2add5d solid 20px;
+    border-radius: 10px;
+    
 }
 
+.intro img{
+    width: 50%;
+}
 
-
-
+.title{
+    font-size: 150%;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
