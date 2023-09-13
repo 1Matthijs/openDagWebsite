@@ -1,0 +1,25 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+}
+
+header{
+    height: 10vh;
+    background: #fc3232;
+    
+}
+
+.flexContainer{
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 10vh;
+}
+
+
+
+
