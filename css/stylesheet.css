@@ -31,7 +31,7 @@ body {
   display: block;
   height: 100px;
   width: 100%;
-  background: #2add5d;
+  background: #014c35;
   margin: 0px;  
   z-index: 9;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 #main-menu a {
-  color: #B9FAF8;
+  color: #ffcc00;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -80,11 +80,11 @@ body {
     font-family: 'Cabin', Sans-serif;
     background: linear-gradient(
       to bottom, 
-      #2add5d, #2add5d 20%, 
-      #fc3232 20%, #fc3232 40%, 
-      #2add5d 40%, #2add5d 60%, 
-      #fc3232 60%, #fc3232 80%, 
-      #2add5d 80%, #2add5d 100%
+      #ffcc00, #ffcc00 20%, 
+      transparent 20%, transparent 40%, 
+      #ffcc00 40%, #ffcc00 60%, 
+      transparent 60%, transparent 80%, 
+      #ffcc00 80%, #ffcc00 100%
     );
 }
 
@@ -95,7 +95,7 @@ body {
     left: -250px;
     width: 200px;
     height: 100%;
-    background-color: #2add5d;
+    background-color: #014c35;
     transition: 0.3s;
     padding: 0px 10px;
     box-sizing: border-box;
@@ -103,7 +103,7 @@ body {
 }
 
 #hamburger-menu h3 {
-  color: black;
+  color: silver;
   font-size: 2.2rem;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 #hamburger-menu a {
-  color: black;
+  color: silver;
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -145,44 +145,105 @@ body {
   }
 
 /* css header */
-.logo
-{
-    height: 10vh;
-}
+
 
 header{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fc3232;
+    background-color:  #014c35;
     box-shadow: -1px 4px 11px black ;
 }
 
 .flexContainer{
     margin: 0px auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo
+{
+    height: 10vh;
+    justify-self: center;
+}
+
 /* intro */
 
 .intro{
+    color: silver;
     margin-top: 20vh;
-    background-color: #2add5d;
+    background-color: #014c35;
     display: flex;
-    border: #2add5d solid 20px;
+    width: 100%;
     border-radius: 10px;
-    
+    margin-bottom: 30vh;
+}
+
+.introText{
+  margin: 1vh 1vw;
 }
 
 .intro img{
     width: 50%;
+    border-radius: 0px  10px 10px 0px;
+    
 }
 
 .title{
     font-size: 150%;
     font-weight: bolder;
     margin-bottom: 5%;
+}
+
+/* ccs voor de vakken*/
+
+.gridContainerLessons
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2vw;
+    gap: 2vw;
+
+}
+
+.lessonCard{
+    padding: 20px;
+
+    text-align: center;
+    background-color: #ffcc00;
+    border: 1px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/*versnellen*/
+
+.versnellen{
+    color: silver;
+    margin-top: 20vh;
+    background-color: #014c35;
+    display: flex;
+    
+    border-radius: 10px;
+    margin-bottom: 30vh;
+}    
+    
+.versnellen img{
+  width: 50%;
+  border-radius:  10px 0px 0px 10px ;
+  
+}
+
+/*css docenten*/
+
+.profileRowOne{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5vw;
+}
+
+.profileRowOne img{
+  width: 50%;
 }
