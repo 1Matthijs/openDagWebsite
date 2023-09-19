@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 /* hamburger menu*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
@@ -157,7 +158,7 @@ header{
 
 .flexContainer{
     margin: 0px auto;
-    width: 90%;
+    width: 90vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,7 +177,7 @@ header{
     margin-top: 20vh;
     background-color: #014c35;
     display: flex;
-    width: 100%;
+    width: 90vw;
     border-radius: 10px;
     margin-bottom: 30vh;
 }
@@ -225,7 +226,7 @@ header{
     margin-top: 20vh;
     background-color: #014c35;
     display: flex;
-    
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 30vh;
 }    
@@ -238,12 +239,41 @@ header{
 
 /*css docenten*/
 
+
 .profileRowOne{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 5vw;
+  column-gap: 2vw;
+}
+.profileRowOne{
+  margin-bottom: 10vh;
+}
+.profileRowOne div, .profileRowTwo div{
+  margin: 0 auto;
+  width: 20vw;
+  background-color: #ffcc00;
+  border: #ffcc00 2vh solid;
+  border-radius: 1vh 1vh 1vh 1vh;
+  box-shadow: 1vh 1vh 1vh black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.profileRowOne img{
-  width: 50%;
+.profileRowTwo{
+  align-self: center;
 }
+
+.profileRowOne img, .profileRowTwo img{
+  width: 50%;
+  border: 0.5vw solid black;
+  padding: 1vh;
+  border-radius: 100vh;
+}
+
+.profileRowTwo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  column-gap: 2vw;
+}
+
