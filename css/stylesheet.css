@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'Felix Regular';
+  src: url('../FELIX Regular/FELIX Regular.ttf') format('ttf');
+      
+  /* You can also include other font formats if available */
+  font-weight: normal; /* You can adjust this if needed */
+  font-style: normal;  /* You can adjust this if needed */
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
+    font-style: Felix Regular;
 }
 
 /* hamburger menu*/
@@ -11,7 +22,7 @@ body {
   margin: 0px;
   font-size: 20px;
   min-height: 200vh;
-  font-family: 'Cabin', Sans-serif;
+  font-family: Felix Regular;
 }
 
 .overlay{
@@ -204,9 +215,8 @@ header{
 {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 2vw;
+    margin: 2vw 0;
     gap: 2vw;
-
 }
 
 .lessonCard{
@@ -214,7 +224,6 @@ header{
 
     text-align: center;
     background-color: #ffcc00;
-    border: 1px solid #ffcc00;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
@@ -252,7 +261,6 @@ header{
   margin: 0 auto;
   width: 20vw;
   background-color: #ffcc00;
-  border: #ffcc00 2vh solid;
   border-radius: 1vh 1vh 1vh 1vh;
   box-shadow: 1vh 1vh 1vh black;
   display: flex;
@@ -302,7 +310,6 @@ footer{
   justify-content: space-between;
   margin-top: 30vh;
   color: silver;
-  width: 100%;
 }
 
 footer div{
@@ -314,4 +321,64 @@ footer div{
 
 footer div a{
   color: silver;
+}
+
+@media(width < 640px)
+{
+  .profileRowOne ,.profileRowTwo
+  {
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 3vh;
+    
+  }
+
+  .profileRowTwo{
+    margin-top: 3vh;
+  }
+
+  .profileRowOne div ,.profileRowTwo div
+  {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro{
+    flex-direction: column;
+  }
+  .intro img{
+    width: 100%;
+    border-radius:  0vh 0vh 1vh 1vh;
+  }
+
+  .versnellen{
+    flex-direction: column;
+  }
+
+  .versnellen img{
+    width: 100%;
+    border-radius:  1vh 1vh 0vh 0vh ;
+  }
+
+  .gridContainerLessons{
+    grid-template-columns: 1fr;
+    
+  }
+
+ 
+
+  .rooster{
+    margin: 0 auto;
+    flex-direction: column;
+    
+  }
+
+  .rooster img{
+    width: 100%;
+    border-radius: 0vh 0vh 1vh 1vh;
+  }
+  
 }
