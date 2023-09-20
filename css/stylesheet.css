@@ -262,6 +262,7 @@ header{
 
 .profileRowTwo{
   align-self: center;
+ 
 }
 
 .profileRowOne img, .profileRowTwo img{
@@ -277,3 +278,40 @@ header{
   column-gap: 2vw;
 }
 
+/*rooster*/
+
+.rooster{
+  margin: 0 auto;
+  width: 90vw;
+  background: #ffcc00;
+  border-radius: 1vh 1vh 1vh 1vh;
+  display: flex;
+}
+
+
+.rooster img{
+  width: 70%;
+  
+  border-radius: 0vh 1vh 1vh 0vh;
+}
+
+/*footer*/
+footer{
+  padding: 2vh;
+  background: #014c35;
+  justify-content: space-between;
+  margin-top: 30vh;
+  color: silver;
+  width: 100%;
+}
+
+footer div{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div a{
+  color: silver;
+}
